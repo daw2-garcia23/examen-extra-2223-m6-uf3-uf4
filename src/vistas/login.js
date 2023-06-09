@@ -18,7 +18,6 @@ export default{
     script: async()=>{
       document.querySelector('#enviar').addEventListener("click", async(e)=>{ //detecto el click en el boton enviar 
         e.preventDefault()
-
         try {
           
           let usuarioLogin = { //recojo los valores de los inputs y los guardo en un objeto 

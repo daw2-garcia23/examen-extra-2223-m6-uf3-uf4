@@ -16,21 +16,18 @@ export const header = {
     </header>
     `,
     script: ()=>{
-
         //cargo la vista panel y su funcionalidad
         document.querySelector('#home').addEventListener("click", (e)=>{
             e.preventDefault()
             document.querySelector('main').innerHTML = home.template
             home.script()
           })
-    
           //cargo la vista login y su funcionalidad
           document.querySelector('#login').addEventListener("click", (e)=>{
             e.preventDefault()
             document.querySelector('main').innerHTML = login.template
             login.script()
           })
-  
           //cargo la vista registro y su funcionalidad
           document.querySelector('#registro').addEventListener("click", (e)=>{
             e.preventDefault()
